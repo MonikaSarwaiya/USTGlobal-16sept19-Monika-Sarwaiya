@@ -1,0 +1,31 @@
+package com.ustglobal.userinfo;
+
+import java.util.List;
+import java.util.Scanner;
+
+import com.ustglobal.user_info.bean.UserBean;
+import com.ustglobal.user_info.dao.UserDAO;
+import com.ustglobal.user_info.util.UserInfoManager;
+
+public class App {
+	public static void main(String[] args) {
+		System.out.println("press 1 to List All Contacts");
+		System.out.println("press 2 to search for a Contact");
+		System.out.println("press 3 to Operate on Contact");
+		Scanner sc = new Scanner(System.in);
+		int ch = sc.nextInt();
+		
+		switch(ch) {
+		case 1:
+			UserDAO  dao = UserInfoManager.getUserDAO();
+			List<UserBean> result = dao.showAllDetails();
+			
+			for(UserBean bean : result) {
+				System.out.println("Name : " + bean.getName());
+				System.out.println("Contact Number - " + bean.getNumber());
+				System.out.println("Group Number - " + bean.getGroupName());
+			}
+			break;
+		}
+	}
+}

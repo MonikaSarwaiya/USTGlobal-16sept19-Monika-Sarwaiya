@@ -1,0 +1,5 @@
+package com.ustglobal.user_info.bean;
+
+public class UserBean {
+
+}

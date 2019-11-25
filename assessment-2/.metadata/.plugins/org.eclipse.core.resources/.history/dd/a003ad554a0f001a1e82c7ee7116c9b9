@@ -1,0 +1,14 @@
+package com.ustglobal.user_info.dao;
+
+import java.sql.*;
+
+import com.ustglobal.user_info.dto.UserInfo;
+
+public class UserInfoDAOJDBCImpl implements UserDAO {
+
+	public static void main(String[] args) {
+		
+	
+	}
+
+	}

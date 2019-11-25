@@ -1,0 +1,5 @@
+package com.ustglobal.user_info.dao;
+
+public class UserInfoDAOJDBCImpl {
+
+}

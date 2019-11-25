@@ -1,0 +1,17 @@
+package com.ustglobal.user_info.dao;
+
+import java.sql.*;
+
+import com.ustglobal.user_info.dto.UserInfo;
+
+public class UserInfoDAOJDBCImpl {
+
+	public static void main(String[] args) {
+		
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		
+		String select = "select * from user_info";
+	}
+
+	}

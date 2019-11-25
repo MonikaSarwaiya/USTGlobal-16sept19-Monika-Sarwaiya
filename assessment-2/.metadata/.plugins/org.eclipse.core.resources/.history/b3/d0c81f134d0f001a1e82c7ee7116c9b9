@@ -1,0 +1,11 @@
+package com.ustglobal.user_info.dao;
+
+import com.ustglobal.user_info.bean.UserBean;
+import com.ustglobal.user_info.dto.UserInfo;
+
+public interface UserDAO {
+
+	public UserBean searchByName(String name);
+	
+	public  UserInfo showAllDetails();
+}

@@ -1,0 +1,10 @@
+package com.ustglobal.user_info.dao;
+
+import com.ustglobal.user_info.dto.UserInfo;
+
+public interface UserDAO {
+
+	public boolean searchByName(String name);
+	
+	public  UserInfo showAllDetails(UserInfo info);
+}

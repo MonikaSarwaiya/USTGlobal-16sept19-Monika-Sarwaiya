@@ -1,0 +1,12 @@
+package com.ustglobal.user_info.util;
+
+import com.ustglobal.user_info.dao.UserDAO;
+import com.ustglobal.user_info.dao.UserInfoDAOJDBCImpl;
+import com.ustglobal.user_info.dto.UserInfo;
+
+public class UserInfoManager {
+
+	public UserDAO getUserDAO(){
+		return new UserInfoDAOJDBCImpl();
+	}
+}
