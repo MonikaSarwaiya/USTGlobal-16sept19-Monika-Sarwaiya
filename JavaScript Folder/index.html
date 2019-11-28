@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+    <script>
+        var age = 22;
+        console.log('Age = '+age);
+        var name='DK'
+        console.log('Name = '+name);
+        var hasHobbies = true;
+        console.log('Has Hobbies = '+hasHobbies);
+        var data = null;
+        console.log('Data = '+data);
+        var car;
+        console.log('Car = '+car);
+    </script>
+</head>
+<body>
+    <script>
+       var fruits = ['Orange','Mango','Apple','Banana'];
+       console.log('Fruits = ',fruits);
+       console.log('Fruits = ',fruits[0]);
+       console.log('Fruits = ',fruits[1]);
+       console.log('Fruits Length = ',fruits.length);
+
+       var person = {
+                      name : 'Gautam Gambhir',
+                      age : 36,
+                      phoneno : 8759875669,
+                      getFullName : function()
+                      {
+                          return this.name + ' ' + this.age
+                      }
+                    }
+                    var name = person.name
+                    console.log('Name = ',name)
+                    var personAge = person.age;
+                    console.log('Age = ',personAge);
+                    var fullName = person.getFullName();
+                    console.log('FullName = ',fullName);
+                    console.log('======================');
+                    var a = 5;
+                    var str = "5";
+                    if(a==str)
+                    {
+                        console.log('Equal');
+                    }
+                    else{
+                        console.log('Not equal');
+                    }
+                    console.log('======================');
+                    var a = 5;
+                    var str = "5";
+                    if(a===str)
+                    {
+                        console.log('Equal');
+                    }
+                    else{
+                        console.log('Not equal');
+                    }
+                    console.log('======================');
+                    var a = 5;
+                    var str = "5";
+                    if(a!==str)
+                    {
+                        console.log('Equal');
+                    }
+                    else{
+                        console.log('Not equal');
+                    }
+                    console.log('======================');
+                    var numberValue = 5;
+                    console.log(typeof numberValue);
+                    var fname = "DK";
+                    console.log(typeof fname);
+                    var lname = null;
+                    console.log(typeof lname);
+                    var fullName1;
+                    console.log(typeof fullName1);
+                     
+    </script>
+</body>
+</html>
