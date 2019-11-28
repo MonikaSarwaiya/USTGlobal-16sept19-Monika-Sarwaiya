@@ -1,0 +1,9 @@
+
+public class SubClass {
+	String s = "Subclass variable";
+
+	SubClass() {
+		super();
+		System.out.println("Sub Class Constructor");
+	}
+}

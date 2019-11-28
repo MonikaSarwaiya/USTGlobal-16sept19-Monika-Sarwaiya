@@ -1,0 +1,10 @@
+
+public class TestPen {
+public static void main(String[] args) {
+	Pen p = new Pen();
+	p.cost = 100;
+	p.brand = "Cello";
+	p.color = "Blue";
+	p.write();
+}
+}

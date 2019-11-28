@@ -1,0 +1,10 @@
+package com.ustglobal.exception.customizedcheckedexception;
+
+public class TestAmount {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

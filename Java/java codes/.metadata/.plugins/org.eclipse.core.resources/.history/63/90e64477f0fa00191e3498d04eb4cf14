@@ -1,0 +1,16 @@
+package com.ustglobal.objectclass;
+
+public class TestCar {
+
+	public static void main(String[] args) {
+
+         Car c = new Car(1400000, "Honda City", "Black");
+         System.out.println(c);
+         
+         Car c1 = new Car(4000000, "BMW", "Black");
+         System.out.println(c);
+         
+         Car c2 = new Car(40000000, "Lemberghini", "Red");
+         System.out.println(c);
+	}
+}

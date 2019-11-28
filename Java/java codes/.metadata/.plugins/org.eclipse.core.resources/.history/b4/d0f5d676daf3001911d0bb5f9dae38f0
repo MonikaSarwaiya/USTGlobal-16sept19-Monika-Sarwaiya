@@ -1,0 +1,13 @@
+
+public class Person {
+	String name;
+	String color;
+	int age;
+
+	void eat() {
+
+	}
+	void walk() {
+
+	}
+}

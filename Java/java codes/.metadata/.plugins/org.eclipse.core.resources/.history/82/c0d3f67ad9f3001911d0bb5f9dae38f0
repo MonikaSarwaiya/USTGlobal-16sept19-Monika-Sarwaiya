@@ -1,0 +1,15 @@
+
+public class CowTest {
+	public static void main(String[] args) {
+		Cow c = new Cow();
+		c.color = "White";
+		c.name = "Ramdulari";
+
+		System.out.println("Cow color is "+c.color);
+		System.out.println("Cow color is "+c.name);
+
+		c.eat();
+		c.sleep();
+	}
+
+}
