@@ -1,5 +1,0 @@
-package com.ustglobal.user_info.dao;
-
-public interface UserDAO {
-
-}
