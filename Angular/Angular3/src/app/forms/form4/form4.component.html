@@ -1,0 +1,69 @@
+<form action="" class="col-md-4 offset-4 mt-5 card card-body" #form="ngForm" (ngSubmit) = "Details(form)">
+    <h1 class="text-center bg-dark text-white">User Information</h1>
+  <div class="form-group">
+      <input type="text" name="name" id="name" class="form-control" placeholder="Enter username ..." 
+      #name = "ngModel" ngModel required>
+  </div>
+      <div *ngIf = "name.touched && name.invalid">
+       <p class="alert alert-danger" *ngIf = "name.errors.required">this field is required</p>
+      </div>
+      <div class="form-group">
+          <input type="digit" name="age" id="age" class="form-control" placeholder="Enter age..." 
+          #age = "ngModel" ngModel required>
+        </div>
+        <div *ngIf = "age.touched && age.invalid">
+          <p class="alert alert-danger" *ngIf = "age.errors.required">this field is required</p>
+       </div>
+       <div class="form-group">
+          <label>Gender</label><br>
+         <label for="">Male</label>&nbsp;&nbsp;
+         <input type="radio" name="gender" id="male" required #gender = "ngModel" ngModel>&nbsp;&nbsp;
+         <label for="">Female</label>&nbsp;&nbsp;
+         <input type="radio" name="gender" id="female">&nbsp;&nbsp;
+         <label for="">Other</label>&nbsp;&nbsp;
+         <input type="radio" name="gender" id="other">
+         </div>
+         <div *ngIf = "gender.touched && gender.invalid">
+            <p class="alert alert-danger" *ngIf = "gender.errors.required">this field is required</p>
+         </div>
+         <div class="form-group">
+            <input type="email" name="email" id="email" class="form-control" placeholder="Enter Email..." 
+            #email = "ngModel" ngModel required>
+          </div>  
+            <div *ngIf = "email.touched && email.invalid">
+             <p class="alert alert-danger" *ngIf = "email.errors.required">this field is required</p>
+            </div>
+            <div class="form-group">
+            <div class="input-group-flex-nowrap mb-2" >
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="addon-wrapping">+91</span>
+              </div>
+            
+            <input type="tel" name="contact" id="contact" class="form-control" placeholder="Enter contact number..." 
+                #cnum = "ngModel" ngModel required>
+              </div>  
+            </div>
+                <div *ngIf = "cnum.touched && cnum.invalid">
+                 <p class="alert alert-danger" *ngIf = "cnum.errors.required">this field is required</p>
+                </div>
+            <div class="form-group">
+              <input type="password" name="password" id="password" class="form-control" placeholder="Enter Password..." 
+              #password = "ngModel" ngModel required>
+            </div>
+            <div *ngIf = "password.touched && password.invalid">
+               <p class="alert alert-danger" *ngIf = "password.errors.required">this field is required</p>
+            </div>
+            <div class="form-group">
+                <input type="password" name="confirm password" id="confirm password" class="form-control" placeholder="Confirm Password..." 
+                #password = "ngModel" ngModel required>
+              </div>
+              <div *ngIf = "password.touched && password.invalid">
+                 <p class="alert alert-danger" *ngIf = "password.errors.required">this field is required</p>
+              </div>
+  <div class="form-group">
+      <button type="submit" class="btn btn-outline-success float-right" [disabled]="form.invalid">Add User</button>
+  </div>
+</form>
+
+
+

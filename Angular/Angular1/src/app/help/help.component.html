@@ -1,0 +1,26 @@
+<div *ngFor="let person of Persons" [ngSwitch]="color">
+<h5 *ngSwitchCase="'red'">{{person.name}}</h5>
+<img src="{{person.img}}" alt="" *ngSwitchCase="'red'">
+<h6 *ngSwitchCase="'red'">{{person.color}}</h6>
+<h6 *ngSwitchCase="'red'">{{person.height}}</h6>
+</div>
+<div *ngFor="let product of Products" [ngSwitch]="color">
+    <h5 *ngSwitchCase="'blue'">{{product.name}}</h5>
+    <img src="{{product.img}}" alt="" *ngSwitchCase="'blue'">
+    <h6 *ngSwitchCase="'blue'">{{product.color}}</h6>
+    <h6 *ngSwitchCase="'blue'">{{product.height}}</h6>
+    </div>
+    <div *ngFor="let pipe of Pipes" [ngSwitch]="color">
+        <h5 *ngSwitchCase="'green'">{{pipe.name}}</h5>
+        <img src="{{pipe.img}}" alt="" *ngSwitchCase="'green'">
+        <h6 *ngSwitchCase="'green'">{{pipe.color}}</h6>
+        <h6 *ngSwitchCase="'green'">{{pipe.height}}</h6>
+        </div>
+<p [ngStyle]="{color: colorName, backgroundColor: colorName1}">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, deserunt?</p>
+
+    <p [ngStyle]="{color: 'indianred', backgroundColor: 'blue'}">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, deserunt?</p>
+
+        <p [ngClass]="{'bg-dark': isActive, 'text-white': isActive, 'bg-info': !isActive}">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, deserunt?</p>
