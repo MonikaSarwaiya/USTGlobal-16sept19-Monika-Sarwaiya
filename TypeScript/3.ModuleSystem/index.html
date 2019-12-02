@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TypeScript3</title>
+</head>
+<body>
+    <h1>Module System</h1>
+    <script src="D:/TypeScript/3.ModuleSystem/node_modules/systemjs/dist/system.js"></script>
+<script>
+  // set our baseURL reference path
+  SystemJS.config({
+    baseURL: "D:/TypeScript/3.ModuleSystem",
+    defaultJSExtentions : true
+  });
+ 
+  // loads /js/main.js
+  SystemJS.import("D:/TypeScript/3.ModuleSystem/import.js");
+</script> 
+    <!-- <script src="./import.js"></script> -->
+</body>
+</html>
