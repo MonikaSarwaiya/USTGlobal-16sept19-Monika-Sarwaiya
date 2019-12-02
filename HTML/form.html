@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms</title>
+</head>
+<body>
+    <form>
+        <label>Name</label><br>
+        <input type="text" name="Name" id="Name" placeholder="Enter Name" required>
+        <br>
+        <label>Email</label><br>
+        <input type="text" name="Email" id="Email" placeholder="Enter Email" required>
+        <br>
+        <label>Mobile</label><br>
+        <input type="tel" name="Mobile" id="Mobile" placeholder="Enter Mobile Number" required>
+        <br>
+        <label>Gender</label><br>
+        <input type="radio" name="gender" id="male" required>
+        <label>Male</label>
+        <input type="radio" name="gender" id="female">
+        <label>Female</label>
+        <input type="radio" name="gender" id="other">
+        <label>Other</label>
+        <br>
+        <label>Joining Month</label>
+        <select name="Month" id="Month" required>
+            <option value="" selected disabled>------Select---</option>
+            <option>July</option>
+            <option>August</option>
+            <option>September</option>
+        </select>
+        <br>
+        <input type="checkbox" required>
+        <label>I agree</label>
+        <br>
+        <input type="submit">
+        <input type="reset">
+        
+    </form>
+</body>
+</html>
